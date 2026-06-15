@@ -1,0 +1,3 @@
+variable "stg" {
+  default = {}
+}

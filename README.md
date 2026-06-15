@@ -1,2 +1,0 @@
-# Terraform-azure
-Terraform-azure
