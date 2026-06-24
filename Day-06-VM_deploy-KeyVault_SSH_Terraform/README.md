@@ -47,7 +47,27 @@ Value:
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ...
 ```
 
-## Step 3 - Terraform Deployment
+## Step 3 - Grant Access to Azure Key Vault
+
+Terraform deployment identity (Azure User, Service Principal, Azure DevOps Service Connection, GitHub OIDC Identity) must have permission to read Key Vault secrets.
+
+Option 1 - RBAC (Recommended)
+
+Navigate to:
+
+```
+Azure Portal
+  → Devsec-vault
+  → Access Control (IAM)
+  → Add Role Assignment
+```
+Assign role: **Key Vault Secrets User'**
+
+Select: Terraform User / Service Principal
+
+---
+
+## Step 4 - Terraform Deployment
 
 ```bash
 terraform init
@@ -86,4 +106,3 @@ ssh -i ~/.ssh/id_rsa azureadmin@<PUBLIC-IP>
 - Remote State Backend
 - Private Subnets
 - NSG Restrictions
-
