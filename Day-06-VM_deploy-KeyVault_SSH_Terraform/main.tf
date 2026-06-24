@@ -2,7 +2,7 @@
 # Existing Resource Group
 # -----------------------------
 data "azurerm_resource_group" "rg" {
-  name = "DevSecOps-rg"
+  name = "tg-rg"
 }
 
 # -----------------------------
