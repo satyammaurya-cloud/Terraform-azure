@@ -3,7 +3,11 @@ rgs = {
         name = "tcs"
         location = "central india"
     }
-    rg1 = {
+    rg2 = {
+        name = "hcl"
+        location = "central india"
+    }
+    rg3 = {
         name = "hcl"
         location = "central india"
     }
