@@ -9,3 +9,8 @@
 .terraform.lock.hcl
 # documents
 *.doc
+
+
+# <----- alias command ---------->
+
+# alias tf='terraform'

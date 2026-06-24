@@ -7,8 +7,4 @@ rgs = {
         name = "hcl"
         location = "central india"
     }
-    rg3 = {
-        name = "hcl"
-        location = "central india"
-    }
 }
